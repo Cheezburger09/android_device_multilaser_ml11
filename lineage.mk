@@ -1,5 +1,7 @@
-$(call inherit-product, device/multilaser/ml11/full_ml11.mk)
+$(call inherit-product, device/multilaser/ml11/device.mk)
 
 PRODUCT_NAME := lineage_ml11
-
-PRODUCT_GMS_CLIENTID_BASE := android-multilaser
+PRODUCT_DEVICE := ml11
+PRODUCT_BRAND := Multilaser
+PRODUCT_MODEL := ML11-M7sQuadCore
+PRODUCT_MANUFACTURER := Multilaser
