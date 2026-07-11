@@ -1,9 +1,8 @@
-/system      ext4    /dev/block/by-name/system
+/system      ext4   /dev/block/mmcblk0p7
+/data        ext4   /dev/block/mmcblk0p8 flags=encryptable=footer
+/cache       ext4   /dev/block/mmcblk0p11
+/boot        emmc   /dev/block/mmcblk0p6
+/recovery    emmc   /dev/block/mmcblk0p10
+/misc        emmc   /dev/block/mmcblk0p9
 
-/data        ext4    /dev/block/by-name/UDISK      flags=encryptable
-
-/cache       ext4    /dev/block/by-name/cache
-
-/external_sd vfat    /devices/platform/sunxi-mmc.0/mmc_host
-
-/usb-otg     vfat    /devices/platform/sunxi-ehci.1
+/external_sd  vfat  /dev/block/mmcblk1p1 flags=display="MicroSD";storage;wipeingui
