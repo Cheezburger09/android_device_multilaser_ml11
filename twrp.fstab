@@ -1,0 +1,9 @@
+/system      ext4    /dev/block/by-name/system
+
+/data        ext4    /dev/block/by-name/UDISK      flags=encryptable
+
+/cache       ext4    /dev/block/by-name/cache
+
+/external_sd vfat    /devices/platform/sunxi-mmc.0/mmc_host
+
+/usb-otg     vfat    /devices/platform/sunxi-ehci.1

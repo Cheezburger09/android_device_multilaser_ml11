@@ -1,0 +1,4 @@
+# su daemon
+service su_daemon /system/xbin/su --daemon
+    class main
+    oneshot

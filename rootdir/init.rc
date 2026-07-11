@@ -1,0 +1,10 @@
+on early-init
+    mount debugfs debugfs /sys/kernel/debug
+
+on boot
+    setprop ro.hardware polaris
+
+service sensors /system/bin/sensorservice
+    class main
+    user system
+    group system
